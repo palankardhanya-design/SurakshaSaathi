@@ -94,7 +94,6 @@ Double-click `index.html` to open directly in any modern browser (Chrome, Edge, 
 
 ---
 
-## 🎯 Review 1 Presentation Guide (What to Show the Panel)
 
 1. **Step 1: Language Switch:**
    - Switch language to **తెలుగు (Telugu)** or **ಕನ್ನಡ (Kannada)** in the top right.
