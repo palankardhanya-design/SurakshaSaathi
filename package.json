@@ -1,0 +1,26 @@
+{
+  "name": "surakshasaathi",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Multilingual (Telugu, Kannada, English) Scenario-Based Scam Resistance PWA",
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "pwa",
+    "cybersecurity",
+    "scam-resistance",
+    "upi",
+    "vernacular",
+    "telugu",
+    "kannada"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

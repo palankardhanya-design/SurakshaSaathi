@@ -1,0 +1,27 @@
+{
+  "name": "SurakshaSaathi: Vernacular Scam Resistance PWA",
+  "short_name": "SurakshaSaathi",
+  "description": "Multilingual (Telugu, Kannada, English) interactive scam simulation to build cyber fraud resistance for digital payment users.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F8FAFC",
+  "theme_color": "#1E40AF",
+  "categories": ["education", "finance", "security"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "./icons/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icons/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

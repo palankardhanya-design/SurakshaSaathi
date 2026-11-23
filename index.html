@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SurakshaSaathi - Vernacular Scam Resistance PWA</title>
+  
+  <!-- PWA Meta Tags -->
+  <meta name="theme-color" content="#1E40AF">
+  <meta name="description" content="A Multilingual (Telugu, Kannada, English) Scenario-Based PWA to build scam resistance for first-time digital payment users, elders, and local vendors.">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="SurakshaSaathi">
+  
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/svg+xml" href="./icons/icon-192.svg">
+  <link rel="apple-touch-icon" href="./icons/icon-192.svg">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-section" onclick="window.app.navigate('home')">
+        <div class="brand-icon">
+          <svg viewBox="0 0 100 100" width="30" height="30">
+            <path d="M 50 10 C 75 10 85 20 85 20 C 85 65 75 80 50 90 C 25 80 15 65 15 20 C 15 20 25 10 50 10 Z" fill="#1E40AF"/>
+            <text x="50" y="58" font-size="34" font-weight="bold" fill="#fff" text-anchor="middle">₹</text>
+            <path d="M 38 64 L 48 74 L 66 52" fill="none" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1 id="appTitle">SurakshaSaathi</h1>
+          <p id="appTagline">Multilingual Scam Resistance for Elders, Vendors & Families</p>
+        </div>
+      </div>
+
+      <!-- Language Selector -->
+      <div class="lang-selector-wrapper">
+        <span class="lang-label">🌐 భాష / ಭಾಷೆ:</span>
+        <select id="langSelect" class="lang-select" aria-label="Select Language">
+          <option value="en">English</option>
+          <option value="te">తెలుగు (Telugu)</option>
+          <option value="kn">ಕನ್ನಡ (Kannada)</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <!-- Emergency Cyber Helpline Banner -->
+  <aside class="helpline-banner" id="helplineBanner">
+    <strong>🚨 Cyber Helpline 1930:</strong> Victim of cyber fraud? Call 1930 immediately or visit cybercrime.gov.in within the "Golden Hour".
+  </aside>
+
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <button class="nav-btn active" data-route="home">
+      <span>🏠</span> <span data-string="navHome">Home</span>
+    </button>
+    <button class="nav-btn" data-route="scanner">
+      <span>🔍</span> <span data-string="navScanner">Scan & Detect</span>
+    </button>
+    <button class="nav-btn" data-route="scenario">
+      <span>⚡</span> <span data-string="navScenarios">Simulations</span>
+    </button>
+    <button class="nav-btn" data-route="pretest">
+      <span>📝</span> <span data-string="navPreTest">Pre-Test</span>
+    </button>
+    <button class="nav-btn" data-route="posttest">
+      <span>🎓</span> <span data-string="navPostTest">Post-Test</span>
+    </button>
+    <button class="nav-btn" data-route="analytics">
+      <span>📊</span> <span>Review 1 Report</span>
+    </button>
+  </nav>
+
+  <!-- Main Dynamic View Container -->
+  <main class="main-wrapper" id="mainContainer" role="main">
+    <!-- Rendered dynamically by app.js -->
+  </main>
+
+  <!-- Scripts -->
+  <script src="./scripts/scenarios.js"></script>
+  <script src="./scripts/detector.js"></script>
+  <script src="./scripts/quiz.js"></script>
+  <script src="./scripts/audio.js"></script>
+  <script src="./scripts/app.js"></script>
+</body>
+</html>
