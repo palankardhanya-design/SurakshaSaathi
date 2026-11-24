@@ -1224,6 +1224,12 @@ body {
   border-color: var(--primary);
 }
 
+.upload-dropzone.drag-active {
+  background: #DBEAFE;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(30, 64, 175, 0.12);
+}
+
 .dropzone-icon {
   font-size: 2.8rem;
   display: block;
@@ -1242,9 +1248,31 @@ body {
   font-size: 0.85rem;
 }
 
+.dropzone-alt {
+  margin-top: 0.35rem;
+  font-weight: 600;
+}
+
 .image-preview-container {
   margin-top: 1rem;
   text-align: center;
+}
+
+.uploaded-images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.uploaded-image-preview {
+  margin: 0;
+}
+
+.uploaded-image-preview figcaption {
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
 }
 
 .image-preview-container img {

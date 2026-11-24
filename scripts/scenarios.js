@@ -29,8 +29,16 @@ const SCENARIOS = [
     simulatedUI: {
       appName: "Paytm Spoof / Fake UPI",
       amount: "₹ 480.00",
-      recipient: "Sri Lakshmi Kirana Store",
-      status: "Successful",
+      recipient: {
+        en: "Sri Lakshmi Kirana Store",
+        te: "శ్రీ లక్ష్మి కిరాణా దుకాణం",
+        kn: "ಶ್ರೀ ಲಕ್ಷ್ಮೀ ಕಿರಾಣಿ ಅಂಗಡಿ"
+      },
+      status: {
+        en: "Successful",
+        te: "విజయవంతం",
+        kn: "ಯಶಸ್ವಿಯಾಗಿದೆ"
+      },
       fakeTxnId: "TXN98472918471"
     },
     steps: [
@@ -127,8 +135,16 @@ const SCENARIOS = [
     },
     visualType: "qr_code",
     simulatedUI: {
-      scannerTitle: "Receive ₹ 3,000 Voucher",
-      instruction: "Scan & Enter UPI PIN to deposit ₹3,000 to your bank account",
+      scannerTitle: {
+        en: "Receive ₹ 3,000 Voucher",
+        te: "₹ 3,000 వోచర్‌ను పొందండి",
+        kn: "₹ 3,000 ವೋಚರ್ ಪಡೆಯಿರಿ"
+      },
+      instruction: {
+        en: "Scan & Enter UPI PIN to deposit ₹3,000 to your bank account",
+        te: "మీ ఖాతాలో ₹3,000 జమ కావడానికి స్కాన్ చేసి UPI PIN నమోదు చేయండి",
+        kn: "ನಿಮ್ಮ ಖಾತೆಗೆ ₹3,000 ಜಮೆಯಾಗಲು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ UPI PIN ನಮೂದಿಸಿ"
+      },
       qrLabel: "UPI://PAY?PA=SCAMMER99@OKAXIS&AM=3000"
     },
     steps: [
@@ -226,7 +242,11 @@ const SCENARIOS = [
     visualType: "police_call",
     simulatedUI: {
       callerName: "CBI Cyber Cell / Delhi Police",
-      charges: "Narcotics Seizure & Money Laundering",
+      charges: {
+        en: "Narcotics Seizure & Money Laundering",
+        te: "మత్తు పదార్థాల స్వాధీనం మరియు మనీ లాండరింగ్",
+        kn: "ಮಾದಕ ವಸ್ತುಗಳ ವಶಪಡಿಸಿಕೊಳ್ಳುವಿಕೆ ಮತ್ತು ಹಣ ಅಕ್ರಮ ವರ್ಗಾವಣೆ"
+      },
       warrantNo: "ARREST-SEC-144-CYB"
     },
     steps: [
@@ -324,7 +344,11 @@ const SCENARIOS = [
     visualType: "sms_alert",
     simulatedUI: {
       sender: "BZ-VPDIST",
-      messageBody: "Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM from the power office because your previous month bill was not updated. Please immediately update via: http://bit.ly/Electricity_Bill_Update.apk or call Officer 9876543210."
+      messageBody: {
+        en: "Dear Consumer, your electricity power will be disconnected tonight at 9:30 PM from the power office because your previous month bill was not updated. Please immediately update via: http://bit.ly/Electricity_Bill_Update.apk or call Officer 9876543210.",
+        te: "వినియోగదారుడికి, గత నెల బిల్లు నవీకరించనందున ఈ రాత్రి 9:30 గంటలకు మీ విద్యుత్ సరఫరా నిలిపివేయబడుతుంది. వెంటనే ఈ లింక్ ద్వారా నవీకరించండి: http://bit.ly/Electricity_Bill_Update.apk లేదా అధికారికి 9876543210కు కాల్ చేయండి.",
+        kn: "ಗ್ರಾಹಕರೇ, ಹಿಂದಿನ ತಿಂಗಳ ಬಿಲ್ ನವೀಕರಿಸದ ಕಾರಣ ಇಂದು ರಾತ್ರಿ 9:30ಕ್ಕೆ ವಿದ್ಯುತ್ ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಲಾಗುತ್ತದೆ. ತಕ್ಷಣ ಈ ಲಿಂಕ್ ಮೂಲಕ ನವೀಕರಿಸಿ: http://bit.ly/Electricity_Bill_Update.apk ಅಥವಾ ಅಧಿಕಾರಿ 9876543210ಕ್ಕೆ ಕರೆ ಮಾಡಿ."
+      }
     },
     steps: [
       {

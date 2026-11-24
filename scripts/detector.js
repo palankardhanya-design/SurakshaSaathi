@@ -204,9 +204,11 @@ class ScamDetector {
 
   // Simulated OCR processing for screenshots
   async processImage(file) {
-    return new Promise((resolve) => {
+    return new Promise((resolve, reject) => {
       // In a pure offline PWA, read file metadata and use heuristic OCR parser
       const reader = new FileReader();
+      reader.onerror = () => reject(reader.error || new Error(`Failed to read image: ${file.name}`));
+      reader.onabort = () => reject(new Error(`Image reading was aborted: ${file.name}`));
       reader.onload = (e) => {
         const dataUrl = e.target.result;
         const fname = (file.name || "").toLowerCase();
